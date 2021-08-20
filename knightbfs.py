@@ -45,5 +45,3 @@ def minSteps(start, end, n):
                 visited[x][y] = True
                 queue.append(cell(x, y, t.d + 1))
 
-
-
