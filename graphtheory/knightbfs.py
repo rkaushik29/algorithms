@@ -1,3 +1,5 @@
+# For obstacles, like bishops on the board, maintain visited cells based on row, col and whether the bishop has been taken; separate visited array for other pieces
+
 class cell:
     def __init__(self, x = 0, y = 0, d = 0):
         self.x = x
