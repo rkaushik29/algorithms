@@ -12,3 +12,4 @@ class Solution:
             max_subarray = max(max_subarray, current_subarray)
         
         return max_subarray
+
