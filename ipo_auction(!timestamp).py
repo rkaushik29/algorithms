@@ -1,3 +1,5 @@
+# in this case, shares are divided s.t. each first gets one share and then they are removed from the list using some criteria
+
 def getUnallottedUsers(bids, totalShares):
     sorted_bids = sorted(sorted(bids, key = lambda x:x[3], reverse = False), key = lambda x:x[2], reverse = True)
     shares_received = dict()
