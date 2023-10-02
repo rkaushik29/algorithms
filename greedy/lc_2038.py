@@ -1,5 +1,5 @@
 class Solution:
-    def winnerOfGame(self, colors: str) -> bool:
+    def winner_of_game(self, colors: str) -> bool:
         alice, bob = 0, 0
 
         # Iterate through the colors, excluding the edge pieces
