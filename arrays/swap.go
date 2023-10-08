@@ -3,9 +3,25 @@ import "fmt"
 
 const a = "100"
 
-type test interface {
+type obj interface {
 	swap()
-	area() int
+	area() float64
+}
+
+type Circle struct {
+	rad float64
+}
+
+type Square struct {
+	side float64
+}
+
+func (c *Circle) area() {
+	return 4*3.14*c.rad*c.rad
+}
+
+func (s *Square) area() {
+	return s.side * s.side
 }
 
 func swap(sw []int) {
