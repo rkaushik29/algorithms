@@ -30,16 +30,21 @@ func swap(sw []int) {
 	}
 }
 
-func area(a int, b int) (int) {
-	return a * b
+func printArea(t test) {
+    fmt.Println("Area:", t.area())
 }
 
 func main() {
 
+	circle := &Circle{rad: 2}
+    square := &Square{side: 2}
+	
 	x := []int{3, 2, 1}
 	swap(x)
 	fmt.Println(x)
 	fmt.Println(a)
+	fmt.printArea(circle)
+	fmt.printArea(square)
 
 }
 
