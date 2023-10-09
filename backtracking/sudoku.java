@@ -94,7 +94,7 @@ class Solution {
                     placeNumber(d, row, col);
                     placeNextNumbers(row, col);
                     // if sudoku is solved, there is no need to backtrack
-                    // since the single unique solution is promised
+                    // since the single que solution is promised
                     if (!sudokuSolved) removeNumber(d, row, col);
                 }
             }
